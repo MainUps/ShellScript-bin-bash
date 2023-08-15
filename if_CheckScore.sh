@@ -3,10 +3,19 @@
 echo -n "Enter your score(0 ~ 100) : "
 read userScore
 
-if [ ${userScore} >= 90 ]
+if [ ${userScore} -ge 90 ]
 then
-	echo ${userScore} is 'A'
+	echo "you are A !!"
+
+elif [ ${userScore} -ge 80 ]
+then
+	echo "you are B !!"
+
+elif [ ${userScore} -ge	70 ]
+then
+	echo "you are C !!"
+
 else
-	echo TT
+	echo "under 70  TT "
 fi
 
